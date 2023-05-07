@@ -1,0 +1,39 @@
+.container-to-follow{
+    width: 100%;
+    max-width: 320px;
+    height: min-content;
+    border-radius: 10px;
+    background-color: var(--bg-gray);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.container-to-follow::-webkit-scrollbar{
+    display: none;
+}
+
+.header-description{
+    padding: 12px 0;
+    padding-left: 12px;
+}
+
+.header-description .title{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.footer-description a{
+    padding-left: 12px;
+    display: inline-block;
+    color: var(--blue-claro);
+    width: 100%;
+    height: 100%;
+    padding: 12px 0 12px 12px;
+}
+
+.footer-description a:hover{
+    background-color: var(--bg-hover);
+    cursor: pointer;
+    
+}

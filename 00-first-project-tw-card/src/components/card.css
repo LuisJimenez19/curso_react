@@ -1,0 +1,92 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    padding: 12px;
+    transition: .2s;
+}
+.card:hover{
+    background-color: var(--bg-hover);
+    cursor: pointer;
+}
+
+.card__details{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card__details img{
+    display: inline-block;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card__user{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.name{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .2s;
+}
+.name:hover{
+    text-decoration: underline;
+}
+.user{
+    color: #808080;
+    font-size: .9em;
+}
+.card__btn-follow{
+    color: var(--bg-gray);
+    background-color: var(--bg-white);
+    padding: 7px 15px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    transition: .2s;
+    text-align: center;
+    white-space: nowrap;
+    /* transition: .2s; */
+    cursor: pointer;
+}
+.card__btn-follow:hover{
+    opacity: .8;
+}
+
+.card__btn-follow.btn--isFollowing{
+    width: 100px;
+    padding: 7px 0;
+    background-color: transparent;
+    outline: 1px solid var(--bg-white);
+    color: var(--bg-white);
+    /* transition: .2s; */
+
+}
+/* is no show the text seguir for defautt */
+.card__btn-follow.btn--isFollowing:hover .text{
+    display: none;
+    /* transition: .2s; */
+}
+.card__btn-follow.btn--isFollowing:hover{
+    /* display: none; */
+    background-color: rgba(255, 0, 0, 0.094);
+    outline: 1px solid red;
+    color: rgb(251, 89, 89);
+}
+
+/* default text dejar de seguir */
+.text--isNotFollowing{
+    display: none;
+}
+
+/* When isFollowing and want dejar de seguir */
+.card__btn-follow.btn--isFollowing:hover .text--isNotFollowing{
+    display: inline;
+}
